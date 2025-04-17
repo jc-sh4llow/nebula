@@ -1,0 +1,259 @@
+/* style.css */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+  }
+  
+  .logo-box {
+    width: 50px;
+    height: 50px;
+    background-color: #22333b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 1rem;
+    border-radius: 9px;
+    overflow:hidden;
+  }
+
+  .logo-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .menu-space {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  
+  .menu-space a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+  }
+  
+  .menu-space a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  .main-body{
+    width: 100%;
+  }
+  .mn-bd-header{
+    position: relative;
+    background-image: url('index-images/image 7.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    overflow: hidden;
+  }
+
+  .mn-bd-header::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .header-words{
+    width: 100%;
+    z-index: 2;
+  }
+
+  .header-words h1{
+    color: white;
+    font-size: 5rem;
+  }
+
+  .header-elements{
+    width: 50%;
+    z-index: 2;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    
+  }
+
+  .search-bar{
+    border: 2px dashed red;
+  }
+
+  .account-btn{
+    border: 2px dashed red;
+    color: white;
+  }
+
+  .account-btn a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nebula-wm{
+    border: 2px dashed red;
+    display: flex;
+    color: white;
+  }
+
+  .mn-bd-aboutus{
+    border: 2px dashed red;
+    display: flex;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .about-image{
+    border: 2px dashed red;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-content{
+    border: 2px dashed red;
+    width: 60%;
+    padding: 10px;
+  }
+
+  .simple-btn {
+    padding: 10px 20px;
+    background-color: #22333b;
+    color: rgba(255, 255, 255, 0.666);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  
+  .simple-btn:hover {
+    background-color: #334950;
+  }
+
+  .mn-bd-signup{
+    border: 2px dashed red;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('index-images/image 9.png'), url('index-images/image.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: auto, cover;
+    position: relative;
+  }
+  
+  .mn-bd-signup::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .signupcontent{
+    z-index: 1;
+    position: relative;
+  }
+
+  .mb-bd-ender{
+    font-weight: bold;
+    text-align: center;
+  }
+
+.footer {
+    display: grid;
+    grid-template-columns: 9.5fr 7.5fr 4.5fr;
+    gap: 20px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer-column {
+    padding: 60px;
+  }
+  
+  /*.footer-column1 {
+    background-color: #444;
+  }
+  
+  .footer-column2 {
+    background-color: #555;
+  }
+  
+  .footer-column3 {
+    background-color: #666;
+  }*/
+
+  .footer-icons{
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-line{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border: none;
+    grid-column: 1/ -1;
+  }
+
+  .footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer ul li{
+    margin-bottom: 15px;
+  }
+  .footer h3{
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-size: 1.2rem;
+  }
