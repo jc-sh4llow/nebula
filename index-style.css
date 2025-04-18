@@ -178,13 +178,11 @@ body {
     display: flex;
     width: 100%;
     padding: 50px;
-    border: 2px dashed red;
   }
 
   .about-image{
     width: 40%;
     text-align: center;
-    border: 2px dashed red;
   }
 
   .about-image img{
@@ -194,7 +192,6 @@ body {
   .about-content{
     width: 60%;
     padding: 10px;
-    border: 2px dashed red;
   }
 
   .simple-btn {
