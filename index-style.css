@@ -108,21 +108,51 @@ body {
   }
 
   .header-elements{
-    width: 50%;
+    width: 100%;
     z-index: 2;
     justify-content: center;
     align-content: center;
     overflow: hidden;
+    padding: 10px;
+    position: relative;
     
   }
 
-  .search-bar{
-    border: 2px dashed red;
+  .search-bar {
+    background-color: #35434A;
+    color: #FFFFFF;
+    border-radius: 999px; /* this makes it super rounded */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
+  
+  .search-bar .search-icon {
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+  
+  .search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .search-bar input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  
 
   .account-btn{
-    border: 2px dashed red;
     color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
   }
 
   .account-btn a{
@@ -130,30 +160,41 @@ body {
     text-decoration: none;
   }
 
+  .account-line{
+    height: 1px;
+    width: 75%;
+  }
+
   .nebula-wm{
-    border: 2px dashed red;
+    position: absolute;
     display: flex;
     color: white;
+    bottom: 50px;
+    right: 0;
+    z-index: 2;
   }
 
   .mn-bd-aboutus{
-    border: 2px dashed red;
     display: flex;
     width: 100%;
-    padding: 25px;
+    padding: 50px;
+    border: 2px dashed red;
   }
 
   .about-image{
-    border: 2px dashed red;
     width: 40%;
     text-align: center;
-    padding: 10px;
+    border: 2px dashed red;
+  }
+
+  .about-image img{
+    height: 100%;
   }
 
   .about-content{
-    border: 2px dashed red;
     width: 60%;
     padding: 10px;
+    border: 2px dashed red;
   }
 
   .simple-btn {
@@ -171,7 +212,6 @@ body {
   }
 
   .mn-bd-signup{
-    border: 2px dashed red;
     color: white;
     text-align: center;
     padding-top: 60px;
@@ -198,6 +238,11 @@ body {
   .signupcontent{
     z-index: 1;
     position: relative;
+  }
+
+  .signupnebula-wm{
+    position: absolute;
+    margin-left: 5px;
   }
 
   .mb-bd-ender{
