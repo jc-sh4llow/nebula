@@ -466,6 +466,10 @@ body {
       width: 100%;
     }
 
+    .about-image img{
+      max-width: 378px;
+    }
+
     .about-content{
       width: 100%;
     }
@@ -570,6 +574,10 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
+    }
+
+    .about-image img{
+      max-width: 378px;
     }
 
     .about-content{
