@@ -269,7 +269,7 @@ body {
   }
   
   .footer-column3 {
-    background-color: #666;
+    border: 2px dashed red;
   }*/
 
   .footer-icons{
@@ -347,6 +347,17 @@ body {
     .mn-bd-aboutus{
       display: flex;
       flex-direction: column;
+    }
+
+    .about-image{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .about-image img{
+      width: 100%;
+      height: auto;
     }
 
     .about-content{
@@ -433,12 +444,244 @@ body {
   
   @media (max-width: 768px) {
     /* Smartphones */
+    .mn-bd-header{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .header-words h1{
+      font-size: 3.5rem;
+      margin-bottom: 100px;
+    }
+
+    .mn-bd-aboutus{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-image{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .about-content{
+      width: 100%;
+    }
+
+    .simple-btn{
+      text-align: center;
+    }
+
+    .mn-bd-signup{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-image: url('index-images/image.png');
+      background-size: cover;
+    }
+
+    .signupcontent h1{
+      font-size: 3rem;
+    }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .footer-column{
+      padding: 0px;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .footer-icons{
+      justify-content: center;
+    }
+
+    .footer-column ul,
+    .footer-column p {
+      display: none;
+    }
+
+    .footer-column ul.footer-dropdown-open,
+    .footer-column p.footer-dropdown-open {
+      display: block;
+    }
+
+    .footer-column h3::after {
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    .footer h3{
+      margin: 10px;
+    }
+
+
+    .menu-space {
+      display: none;
+      flex-direction: column;
+      background-color: #eee;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+      z-index: 999;
+    }
+  
+    .menu-space.show {
+      display: flex;
+    }
+  
+    .menu-space a {
+      padding: 1rem;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+  
+    .hamburger {
+      margin-left: auto;
+    }
   }
   
   @media (max-width: 992px) {
     /* Tablet portrait */
+    .mn-bd-header{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .header-words h1{
+      font-size: 3.5rem;
+      margin-bottom: 100px;
+    }
+
+    .mn-bd-aboutus{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-image{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .about-content{
+      width: 100%;
+    }
+
+    .simple-btn{
+      text-align: center;
+    }
+
+    .mn-bd-signup{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-image: url('index-images/image.png');
+      background-size: cover;
+    }
+
+    .signupcontent h1{
+      font-size: 3rem;
+    }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    .footer-column{
+      padding: 0px;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .footer-icons{
+      justify-content: center;
+    }
+
+    .footer-column ul,
+    .footer-column p {
+      display: none;
+    }
+
+    .footer-column ul.footer-dropdown-open,
+    .footer-column p.footer-dropdown-open {
+      display: block;
+    }
+
+    .footer-column h3::after {
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    .footer h3{
+      margin: 10px;
+    }
+
+
+    .menu-space {
+      display: none;
+      flex-direction: column;
+      background-color: #eee;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+      z-index: 999;
+    }
+  
+    .menu-space.show {
+      display: flex;
+    }
+  
+    .menu-space a {
+      padding: 1rem;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+  
+    .hamburger {
+      margin-left: auto;
+    }
   }
 
   @media (max-width: 1200px){
     /* Tablet landscape */
+    .header-words h1{
+      font-size: 4rem;
+    }
+
+    .mn-bd-aboutus{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-image{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .about-image img{
+      width: 90%;
+      height: auto;
+    }
+
+    .about-content{
+      width: 100%;
+    }
+
+    .footer-column3 {
+      padding-left: 30px;
+    }
   }
