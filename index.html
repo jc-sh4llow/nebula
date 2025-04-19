@@ -64,7 +64,7 @@
                         <li>Organize your bookshelf and track your reading progress</li>
                         <li>Share passages on social media</li>
                     </ul>
-                    <p>Enjoy a smooth and immersive reading experience - all grom your browser.</p>
+                    <p>Enjoy a smooth and immersive reading experience - all from your browser.</p>
                     <button class="simple-btn">Shop ebooks</button>
                 </div>
             </div>
@@ -135,6 +135,38 @@
                 </div>
                 <hr class="footer-line">
             </div>
+            <div class="socials">
+                <div class="icon-container">
+                    <div class="fb"><a href="#"><img src="index-images/facebook-icon.png" alt="Facebook"></a></div>
+                    <div class="insta"><a href="#"><img src="index-images/instagram-icon.png" alt="Instagram"></a></div>
+                    <div class="x"><a href="#"><img src="index-images/x-icon.png" alt="X"></a></div>
+                    <div class="tiktok"><a href="#"><img src="index-images\tiktok-icon.png" alt="Tiktok"></div>
+                </div>
+                <div class="footer-note">
+                    &copy; 2025 Nebula. All rights reserved.
+                  </div>
+                  
+            </div>
         </div>
+        <script>
+            const hamburger = document.querySelector(".hamburger");
+            const menu = document.querySelector(".menu-space");
+          
+            hamburger.addEventListener("click", () => {
+              menu.classList.toggle("show");
+            });
+
+            if (window.innerWidth <= 480) {
+                document.querySelectorAll(".footer-column h3").forEach((heading) => {
+                    heading.style.cursor = "pointer";
+                    heading.addEventListener("click", () => {
+                        const nextElement = heading.nextElementSibling;
+                        if (nextElement && (nextElement.tagName === "UL" || nextElement.tagName === "P")) {
+                            nextElement.classList.toggle("footer-dropdown-open");
+                        }
+                    });
+                });
+            }
+          </script>
     </body>
 </html>
