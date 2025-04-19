@@ -655,7 +655,7 @@ body {
   }
 
   @media (max-width: 1200px){
-    /* Tablet landscape */
+    /*Tablet Landscape*/
     .header-words h1{
       font-size: 4rem;
     }
