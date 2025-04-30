@@ -259,18 +259,11 @@ body {
   .footer-column {
     padding: 60px;
   }
-  
-  /*.footer-column1 {
-    background-color: #444;
+
+  .footer-column a{
+    text-decoration: none;
+    color: white;
   }
-  
-  .footer-column2 {
-    background-color: #555;
-  }
-  
-  .footer-column3 {
-    border: 2px dashed red;
-  }*/
 
   .footer-icons{
     display: flex;
