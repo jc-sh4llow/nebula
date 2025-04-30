@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: white; /* White background */
+    font-family: 'Segoe UI', sans-serif;
+    color: black; /* Black text globally */
+  }
+  
+  header {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 12px 30px;
+    gap: 20px;
+    border-bottom: 2px solid #ccc; /* 👈 This adds the bottom line */
+  }
+  
+  header button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header button:hover,
+  header button:focus {
+    background-color: #e0e0e0;
+  }
+  
+  header .nav-left, header .nav-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header .search-bar {
+    text-align: center;
+  }
+  
+  header .search-bar input {
+    background-color: #e0e0e0;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    color: black;
+  }
+  
+  header .search-bar input::placeholder {
+    color: black;
+    opacity: 1;
+  }
+  
+  .search-bar input {
+    background-color: #e0e0e0;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    color: black;
+  }
+  
+  .search-bar input::placeholder {
+    color: black;
+    opacity: 1;
+  }
+  
+  .fiction-section {
+    padding: 0px 30px; /* 30px top/bottom, 20px left/right */
+    background-color: white;
+    color: black;
+  }
+  
+  
+  .fiction-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 20px; /* Added top margin */
+  }
+  
+  .fiction-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px auto; /* center horizontally with auto margins */
+  }
+  
+  
+  
+  .fiction-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  
+  .filter-options span,
+  .sort-options span {
+    margin-left: 10px;
+    color: #007bff; /* Optional: blue accent for clickable filters */
+    cursor: pointer;
+  }
+  
+/* Wider spacing between cards */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px; /* Increased gap between items */
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px; /* Side margin */
+  }
+  
+  /* Larger, sharper book images */
+  .book-card img {
+    width: 100%;
+    height: 480px; /* Increased height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Zoom effect on hover */
+  .book-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Book card container styling */
+  .book-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    color: black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Book titles and price */
+  .book-card h6 {
+    margin: 12px 0 8px;
+    font-size: 15px;
+  }
+  
+  .book-card p {
+    font-size: 14px;
+    color: black;
+  }
+  
+  
+  .book-card.sold-out {
+    opacity: 0.6;
+  }
+  
+  .sold-label {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #ff4e4e;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  footer {
+    background-color: #1b2b30;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 60px 20px;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-brand img {
+    width: 60px;
+  }
+  
+  .footer-brand h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .footer-brand span {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #b3c5c9;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-links p {
+    color: #b3c5c9;
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom .socials a {
+    margin: 0 10px;
+  }
+  
+  .footer-bottom img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  /* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #ccc;
+  }
+  
+  /* Links inside dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Hover effect */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

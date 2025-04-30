@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #22333B;
+   font-family: 'Inter', sans-serif;
+    color: white;
+  }
+
+  header {
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 12px 30px;
+  gap: 20px;
+  }
+
+  header button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  }
+
+  header a {
+  text-decoration: none; /* Removes the default underline from links */
+  }
+
+  header button:hover,
+  header button:focus {
+  background-color: #e0e0e0; /* Light gray background on hover */
+  }
+
+  header .nav-left, header .nav-right {
+  display: flex;
+  gap: 20px;
+  }
+
+  header .search-bar {
+  text-align: center;
+  }
+
+  header .search-bar input {
+  background-color: rgb(65, 89, 100);
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  color: white;
+  }
+
+  header .search-bar input::placeholder {
+  color: white;
+  opacity: 1;
+  }
+
+  header button:active {
+  background-color: transparent;
+  }
+
+  header .nav-left button, header .nav-right button {
+  padding: 8px 15px;
+  border-radius: 4px;
+  }
+
+  header .nav-left button:hover, header .nav-right button:hover {
+  background-color: #dcdcdc; /* For hover effect */
+  }
+  
+
+  .search-bar input {
+  background-color: rgb(65, 89, 100);
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;  
+  color: white;    
+  }
+
+  .search-bar input::placeholder {
+  color: white; 
+  opacity: 1;  
+  }
+
+  .collaboration-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .collaboration-section h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .collab-subtext {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+  }
+  
+  .collab-subtext a {
+    color: #61dafb;
+    text-decoration: underline;
+  }
+  
+  .collab-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns fixed */
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  
+  .collab-card {
+    background-color: #32444d;
+    border-radius: 12px;
+    padding: 30px 20px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .collab-card .icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .collab-card h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .collab-card p {
+    font-size: 13px;
+    color: #b0c4cc;
+  }
+  
+  .collab-footer {
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 12px;
+    padding: 20px 40px;
+    margin-top: 40px;
+    display: inline-block;
+  }
+  
+  .collab-footer h5 {
+    margin-bottom: 5px;
+  }
+  
+  .collab-footer p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-btn {
+    padding: 8px 16px;
+    background-color: #0e1a1f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .contact-btn:hover {
+    background-color: #1e2e35;
+  }
+  
+  @media (max-width: 768px) {
+    .collab-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+    }
+  }
+  
+  footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 60px 20px;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-brand img {
+    width: 60px;
+  }
+  
+  .footer-brand h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .footer-brand span {
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  .footer-links p {
+    color: #000000;
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom .socials a {
+    margin: 0 10px;
+  }
+  
+  .footer-bottom img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }

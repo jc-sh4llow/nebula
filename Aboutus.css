@@ -1,0 +1,370 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0e1a1f;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    header {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 12px 30px;
+    gap: 20px;
+    position: relative; 
+    z-index: 100;
+    }
+
+    header button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    }
+
+    header a {
+    text-decoration: none; /* Removes the default underline from links */
+    }
+
+    header button:hover,
+    header button:focus {
+    background-color: #e0e0e0; /* Light gray background on hover */
+    }
+
+    header .nav-left, header .nav-right {
+    display: flex;
+    gap: 20px;
+    }
+
+    header .search-bar {
+    text-align: center;
+    }
+
+    header .search-bar input {
+    background-color: rgb(65, 89, 100);
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    }
+
+    header .search-bar input::placeholder {
+    color: white;
+    opacity: 1;
+    }
+
+    header button:active {
+    background-color: transparent;
+    }
+
+    header .nav-left button, header .nav-right button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    }
+
+    header .nav-left button:hover, header .nav-right button:hover {
+    background-color: #dcdcdc; /* For hover effect */
+    }
+    
+
+    .search-bar input {
+    background-color: rgb(65, 89, 100);
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;  
+    color: white;    
+    }
+
+    .search-bar input::placeholder {
+    color: white; 
+    opacity: 1;  
+    }/* === Hero === */
+    .hero {
+        position: relative;
+        text-align: center;
+        color: white;
+        background-image: url('bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px 20px;
+        margin-bottom: 20px;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(14, 26, 31, 0.6);
+        z-index: 0;
+      }
+      .hero h2,
+      .hero p {
+        position: relative;
+        z-index: 1;
+      }
+      .hero h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+      
+      /* Team Section */
+      .team-section {
+        background-color: #0e1a1f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .team-section h5 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .team-section p {
+        font-size: 14px;
+        max-width: 700px;
+        margin: auto;
+      }
+      
+      /* Team Cards */
+      .team-card {
+        background-color: #32444b;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+      .team-card img.rounded-circle {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border: 3px solid #ffffff22;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .team-card img.rounded-circle:hover,
+      .team-card img.rounded-circle:focus {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        border-color: #ffffff;
+      }
+      .team-card h6 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .team-card small {
+        color: #cccccc;
+        font-size: 13px;
+      }
+      
+      /* Features Section Background */
+      .features-section {
+        background-image: url('bg1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        color: white;
+        padding: 60px 0;
+      }
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(14, 26, 31, 0.7);
+        z-index: 0;
+      }
+      .features-section .container,
+      .features-section .row {
+        position: relative;
+        z-index: 1;
+      }
+      .feature-card {
+        background-color: rgba(14, 26, 31, 0.8);
+        border-radius: 12px;
+        max-width: 400px;
+        text-align: left;
+        padding: 20px;
+      }
+      .feature-card h5 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .feature-card p {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      .feature-card .btn {
+        border-radius: 50px;
+        padding: 5px 20px;
+      }
+      .feature-img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+      @media (min-width: 992px) {
+        .features-section .row:first-child .feature-card {
+          margin-top: 60px;
+        }
+        .features-section .row:first-child .feature-img {
+          margin-left: -60px;
+        }
+        .features-section .row:last-child .feature-img {
+          margin-right: -60px;
+        }
+        .features-section .row:last-child .feature-card {
+          margin-bottom: 60px;
+        }
+      }
+  
+  footer {
+    background-color: #1b2b30;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 60px 20px;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-brand img {
+    width: 60px;
+  }
+  
+  .footer-brand h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .footer-brand span {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #b3c5c9;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-links p {
+    color: #b3c5c9;
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom .socials a {
+    margin: 0 10px;
+  }
+  
+  .footer-bottom img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #ccc;
+  }
+  
+  /* Links inside dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Hover effect */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
