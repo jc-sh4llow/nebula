@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Books - Nebulus Bookstore</title>
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <style>
+        /* Additional styles for Books page */
+        .page-header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #0e1a1f;
+        }
+
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #b3c5c9;
+        }
+
+        .book-categories {
+            background-color: white;
+            padding: 60px 40px;
+            color: black;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category-box {
+            height: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .category-box:hover {
+            transform: translateY(-8px);
+        }
+
+        .category-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+
+        .category-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            text-align: center;
+        }
+
+        .category-content h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .category-button {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .category-button:hover {
+            background-color: #e0e0e0;
+            color: black;
+        }
+
+        /* Active navigation button */
+        header .nav-right a:nth-child(1) button {
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+
+        @media (max-width: 992px) {
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-left">
+            <button>☰</button>
+            <div class="dropdown">
+                <button class="dropbtn">Genre ▾</button>
+
+                <div class="dropdown-content">
+                    <a href="Fiction.html">Fiction</a>
+                    <a href="Educational.html">Education Books</a>
+                    <a href="Financial.html">Financial Literacy Books</a>
+                    <a href="Business.html">Business Books</a>
+                    <a href="Spiritual.html">Spiritual Books</a>
+                </div>
+            </div>
+            <a href="Homepage.html"><button>Home</button></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search books" />
+        </div>
+        <div class="nav-right">
+            <a href="Books.html"><button>Books</button></a>
+            <a href="#"><button>🛒</button></a>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>Our Collection</h1>
+        <p>Explore our extensive catalog of books across various genres and categories, curated to inspire and enlighten
+            readers of all ages.</p>
+    </section>
+
+    <section class="book-categories">
+        <div class="category-grid">
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Bestsellers">
+                <div class="category-content">
+                    <h3>Best Sellers</h3>
+                    <a href="#" class="category-button">Best Sellers →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Fiction">
+                <div class="category-content">
+                    <h3>Fiction</h3>
+                    <a href="Fiction.html" class="category-button">Fiction →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Education">
+                <div class="category-content">
+                    <h3>Education</h3>
+                    <a href="Educational.html" class="category-button">Education →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1579170053380-58064b2dee67?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Financial Literacy">
+                <div class="category-content">
+                    <h3>Financial Literacy</h3>
+                    <a href="Financial.html" class="category-button">Financial Literacy →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Business">
+                <div class="category-content">
+                    <h3>Business</h3>
+                    <a href="Business.html" class="category-button">Business →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1507627593350-a00d15058b11?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Spiritual">
+                <div class="category-content">
+                    <h3>Spiritual</h3>
+                    <a href="Spiritual.html" class="category-button">Spiritual →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1598618443855-232ee0f819f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="New Releases">
+                <div class="category-content">
+                    <h3>New Releases</h3>
+                    <a href="#" class="category-button">New Releases →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1519682577862-22b62b24e493?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Philippine Literature">
+                <div class="category-content">
+                    <h3>Philippine Literature</h3>
+                    <a href="#" class="category-button">Philippine Literature →</a>
+                </div>
+            </div>
+
+            <div class="category-box">
+                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Bundles">
+                <div class="category-content">
+                    <h3>Book Bundles</h3>
+                    <a href="#" class="category-button">Book Bundles →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="Logo.png" alt="Nebula Logo" />
+                <h2>NEB<br>ULA<span>.com</span></h2>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Customer Success</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>About Nebula</h4>
+                    <ul>
+                        <li><a href="Aboutus.html">About us</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get Featured</h4>
+                    <ul>
+                        <li><a href="#">How to get featured in a book</a></li>
+                        <li><a href="#">Previously featured leaders</a></li>
+                        <li><a href="#">Representative work</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>We’re here for you</h4>
+                    <p>Reach out to nebula@gmail.com for any questions or requests, and we’ll get back to you within one
+                        business day.</p>
+                </div>
+                <div>
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">E Books</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Editorial Services</h4>
+                    <ul>
+                        <li><a href="#">Book Writing</a></li>
+                        <li><a href="#">Book Editing</a></li>
+                        <li><a href="#">Book Printing</a></li>
+                        <li><a href="#">Book Marketing</a></li>
+                        <li><a href="#">Thesis Printing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="socials">
+                <a href="#"><img src="fb.png" alt="Facebook"></a>
+                <a href="#"><img src="ig.png" alt="Instagram"></a>
+                <a href="#"><img src="x.png" alt="X"></a>
+                <a href="#"><img src="tiktok.png" alt="TikTok"></a>
+            </div>
+            <p>© 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
