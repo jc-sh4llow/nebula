@@ -94,7 +94,7 @@
         position: relative;
         text-align: center;
         color: white;
-        background-image: url('bg.png');
+        background-image: url('images/bg.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -177,7 +177,7 @@
       
       /* Features Section Background */
       .features-section {
-        background-image: url('bg1.png');
+        background-image: url('images/bg1.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
